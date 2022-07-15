@@ -1,0 +1,45 @@
+{
+  "name": "vue-im-app",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vite serve --mode development",
+    "build": "vite build --mode production",
+    "dev": "vite --mode development",
+    "electron_build": "electron-packager ./dist/ --platform=all --arch=x64 --icon=./src/assets/favicon.ico --overwrite",
+    "electron_build_mac": "electron-packager ./dist/ --platform=darwin --arch=x64 --icon=./src/assets/favicon.ico --overwrite"
+  },
+  "dependencies": {
+    "@element-plus/icons": "0.0.11",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@vitejs/plugin-vue": "^1.4.0",
+    "axios": "^0.21.1",
+    "element-plus": "^1.0.2-beta.70",
+    "js-audio-recorder": "^1.0.7",
+    "js-cookie": "^2.2.1",
+    "moment": "^2.29.1",
+    "qs": "^6.10.1",
+    "recordrtc": "^5.6.2",
+    "vue": "^3.2.1",
+    "vue-router": "^4.0.11",
+    "vue3-discordpicker": "^1.1.0",
+    "vuex": "^4.0.0",
+    "websocket-heartbeat-js": "^1.0.13"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.1",
+    "electron": "^13.2.2",
+    "electron-packager": "^15.3.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-resources-loader": "^1.4.1",
+    "vite": "^2.4.4",
+    "vue-cli-plugin-style-resources-loader": "~0.1.5",
+    "vue-loader": "^15.9.8",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.0.0"
+  }
+}
